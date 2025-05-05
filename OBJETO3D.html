@@ -16,7 +16,15 @@
             height: 100vh;
             touch-action: none;
         }
-
+        #info {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
         #loading {
             position: absolute;
             top: 50%;
@@ -32,7 +40,7 @@
 </head>
 <body>
     <div id="canvas-container"></div>
-
+<div id="info"></div>
     <div id="loading">Cargando modelo STL...</div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
