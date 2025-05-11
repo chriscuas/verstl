@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visor Simple de STL</title>
+    <title>FORMAS Y ESPACIOS</title>
     <style>
         body {
             margin: 0;
@@ -39,7 +39,16 @@
     </style>
 </head>
 <body>
-
+    <div id="canvas-container"></div>
+    <div id="info">
+        <h3>Controles:</h3>
+        <p>🖱️ Arrastrar: Rotar modelo</p>
+        <p>🖱️ Scroll: Zoom</p>
+        <p>🖱️ Shift + Arrastrar: Mover modelo</p>
+        <p>👆 Un dedo: Rotar</p>
+        <p>👆 Pinch: Zoom</p>
+        <p>👆 Dos dedos: Mover</p>
+    </div>
     <div id="loading">Cargando modelo STL...</div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -48,6 +57,7 @@
 
     <script>
         // URL del modelo STL precargado - reemplazar con tu propio modelo
+       
         const MODEL_URL = 'https://chriscuas.github.io/verstl/FIG3.stl';
 
         // Variables globales
